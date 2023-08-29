@@ -1,0 +1,22 @@
+{
+  "name": "promopage",
+  "version": "1.0.0",
+  "description": "Testing description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivsmcrew/PromoPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivsmcrew/PromoPage/issues"
+  },
+  "homepage": "https://github.com/Ivsmcrew/PromoPage#readme",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

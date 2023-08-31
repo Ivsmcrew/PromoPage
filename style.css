@@ -94,9 +94,28 @@ legend {
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.backLayer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.backLayer_active {
+  display: block;
+}
+
+.no-display {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

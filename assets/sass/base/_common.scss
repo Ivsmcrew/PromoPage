@@ -1,7 +1,34 @@
 html{
     scroll-behavior: smooth;  
+    font-size: $base-font-size;
 }
 body{
 	overflow-x: hidden;
     scroll-behavior: smooth;  
+}
+.backLayer{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: none;
+
+    &_active{
+        display: block;
+    }
+}
+.wrapper{
+
+}
+h1{
+
+}
+h2{
+
+}
+.no-display{
+    display: none;
 }

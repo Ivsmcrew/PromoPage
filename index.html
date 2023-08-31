@@ -14,123 +14,119 @@
     <div class="backLayer"></div>
 
     <header class="header">
-        <div class="wrapper">
-            <div class="burger header__burgerIcon">
-                <div class="burger__rectangle"></div>
-                <div class="burger__rectangle"></div>
-                <div class="burger__rectangle"></div>
-            </div>
-            <button class="premiumButton header__premiumButton">
-                <img class="rubinIcon" src="./assets/icons/rubin-icon.png" alt="premium button">
-            </button>
+        <div class="burger header__burgerIcon">
+            <div class="burger__rectangle"></div>
+            <div class="burger__rectangle"></div>
+            <div class="burger__rectangle"></div>
         </div>
+        <button class="premiumButton header__premiumButton">
+            <img class="rubinIcon" src="./assets/icons/rubin-icon.png" alt="premium button">
+        </button>
     </header>
 
     <main class="main">
-        <div class="wrapper">
-            <nav class="nav main__nav main__nav_hidden">
-                <div class="user nav__user">
-                    <img class="avatarImage" src="./assets/icons/avatar-image.png" alt="avatar image">
-                    <p class="userName">Test2412</p>
-                    <button class="premiumButton user__premiumButton">GET PREMIUM</button>
-                </div>
+        <nav class="nav main__nav main__nav_hidden">
+            <div class="user nav__user">
+                <img class="avatarImage" src="./assets/icons/avatar-image.png" alt="avatar image">
+                <p class="userName">Test2412</p>
+                <button class="premiumButton user__premiumButton">GET PREMIUM</button>
+            </div>
 
-                <div class="separator nav__separator"></div>
+            <div class="separator nav__separator"></div>
 
-                <ul class="hub nav__hub">
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/profile-icon.svg" alt="Profile button">
-                            <p class="department__text">Profile</p>
+            <ul class="hub nav__hub">
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/profile-icon.svg" alt="Profile button">
+                        <p class="department__text">Profile</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/photo-icon.svg" alt="My photos button">
+                        <p class="department__text">My photos</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
+                        <p class="department__text">Messages</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/heart-icon.svg" alt="Favorites button">
+                        <p class="department__text">Favorites</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/eye-icon.svg" alt="Guests button">
+                        <p class="department__text">Guests</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/gear-icon.svg" alt="Settings button">
+                        <p class="department__text">Settings</p>
+                    </a>    
+                </li>
+                <li class="department">
+                    <a class="department__link" href="#">
+                        <img class="department__icon" src="./assets/icons/logout-icon.svg" alt="Log out button">
+                        <p class="department__text">Log out</p>
+                    </a>    
+                </li>
+            </ul>
+        </nav>
+
+        <section class="credits main__credits">
+            <h2>Закончились кредиты?</h2>
+            
+            <div class="separator credits__separator"></div>
+
+            <div class="sliderContainer credits__sliderContainer"></div>
+
+            <button class="buyButton credits__buyButton">Try now</button>
+
+            <div class="agreement credits__agreement">
+                <input type="checkbox" id="agree" checked>
+                <label for="agree">
+                    By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span>
+                </label>
+            </div>
+
+            <div class="additional credits__additional">
+                <img class="rubin additional__rubin" src="./assets/icons/rubin-object.svg" alt="rubin image">
+
+                <ul class="features additional__features">
+                    <li class="feat">
+                        <a class="feat__link" href="#">
+                            <img class="feat__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
+                            <p class="feat__text">Отправлять сообщения</p>
                         </a>    
                     </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/photo-icon.svg" alt="My photos button">
-                            <p class="department__text">My photos</p>
+                    <li class="feat">
+                        <a class="feat__link" href="#">
+                            <img class="feat__icon" src="./assets/icons/eye-icon.svg" alt="Hidden photos button">
+                            <p class="feat__text">Просматривать скрытые фото</p>
                         </a>    
                     </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
-                            <p class="department__text">Messages</p>
+                    <li class="feat">
+                        <a class="feat__link" href="#">
+                            <img class="feat__icon" src="./assets/icons/gift-icon.svg" alt="Gift button">
+                            <p class="feat__text">Оплачивать подарки</p>
                         </a>    
                     </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/heart-icon.svg" alt="Favorites button">
-                            <p class="department__text">Favorites</p>
-                        </a>    
-                    </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/eye-icon.svg" alt="Guests button">
-                            <p class="department__text">Guests</p>
-                        </a>    
-                    </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/gear-icon.svg" alt="Settings button">
-                            <p class="department__text">Settings</p>
-                        </a>    
-                    </li>
-                    <li class="department">
-                        <a class="department__link" href="#">
-                            <img class="department__icon" src="./assets/icons/logout-icon.svg" alt="Log out button">
-                            <p class="department__text">Log out</p>
+                    <li class="feat">
+                        <a class="feat__link" href="#">
+                            <img class="feat__icon" src="./assets/icons/heart-icon.svg" alt="Premium functions button">
+                            <p class="feat__text">Пользоваться другими премиум функциями</p>
                         </a>    
                     </li>
                 </ul>
-            </nav>
-
-            <section class="credits main__credits">
-                <h2>Закончились кредиты?</h2>
-                
-                <div class="separator credits__separator"></div>
-
-                <div class="sliderContainer credits__sliderContainer"></div>
-
-                <button class="buyButton credits__buyButton">Try now</button>
-
-                <div class="agreement credits__agreement">
-                    <input type="checkbox" id="agree" checked>
-                    <label for="agree">
-                        By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span>
-                    </label>
-                </div>
-
-                <div class="additional credits__additional">
-                    <img class="rubin additional__rubin" src="./assets/icons/rubin-object.svg" alt="rubin image">
-
-                    <ul class="features additional__features">
-                        <li class="feat">
-                            <a class="feat__link" href="#">
-                                <img class="feat__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
-                                <p class="feat__text">Отправлять сообщения</p>
-                            </a>    
-                        </li>
-                        <li class="feat">
-                            <a class="feat__link" href="#">
-                                <img class="feat__icon" src="./assets/icons/eye-icon.svg" alt="Hidden photos button">
-                                <p class="feat__text">Просматривать скрытые фото</p>
-                            </a>    
-                        </li>
-                        <li class="feat">
-                            <a class="feat__link" href="#">
-                                <img class="feat__icon" src="./assets/icons/gift-icon.svg" alt="Gift button">
-                                <p class="feat__text">Оплачивать подарки</p>
-                            </a>    
-                        </li>
-                        <li class="feat">
-                            <a class="feat__link" href="#">
-                                <img class="feat__icon" src="./assets/icons/heart-icon.svg" alt="Premium functions button">
-                                <p class="feat__text">Пользоваться другими премиум функциями</p>
-                            </a>    
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js" type="module"></script>

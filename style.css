@@ -94,12 +94,13 @@ legend {
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
+  font: 400 normal 10px "Ubuntu", sans-serif;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font: 400 normal 1.4rem "Ubuntu", sans-serif;
 }
 
 .backLayer {
@@ -114,6 +115,18 @@ body {
 }
 .backLayer_active {
   display: block;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+h1 {
+  font: 700 normal 4.8rem "Ubuntu", sans-serif;
+}
+
+h2 {
+  font: 700 normal 2rem "Ubuntu", sans-serif;
 }
 
 .no-display {

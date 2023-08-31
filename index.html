@@ -12,8 +12,9 @@
 </head>
 <body>
     <div class="backLayer"></div>
-    <div class="wrapper">
-        <header class="header">
+
+    <header class="header">
+        <div class="wrapper">
             <div class="burgerIcon header__burgerIcon">
                 <div class="burgerIcon__rectangle"></div>
                 <div class="burgerIcon__rectangle"></div>
@@ -22,9 +23,11 @@
             <button class="premiumButton header__premiumButton">
                 <img class="rubinIcon" src="./assets/icons/rubin-icon.png" alt="premium button">
             </button>
-        </header>
+        </div>
+    </header>
 
-        <main class="main">
+    <main class="main">
+        <div class="wrapper">
             <nav class="nav main__nav main__nav_hidden">
                 <div class="user nav__user">
                     <img class="avatarImage" src="./assets/icons/avatar-image.png" alt="avatar image">
@@ -81,7 +84,7 @@
             </nav>
 
             <section class="credits main__credits">
-                <h1>Закончились кредиты?</h1>
+                <h2>Закончились кредиты?</h2>
                 
                 <div class="separator credits__separator"></div>
 
@@ -127,8 +130,8 @@
                     </ul>
                 </div>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
 
     <script src="script.js" type="module"></script>
 </body>

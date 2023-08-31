@@ -1,10 +1,11 @@
 html{
     scroll-behavior: smooth;  
-    font-size: $base-font-size;
+    @include fontRegular( $base-font-size );
 }
 body{
 	overflow-x: hidden;
     scroll-behavior: smooth;  
+    @include fontRegular( $mob-main-font-size );
 }
 .backLayer{
     position: absolute;
@@ -21,13 +22,13 @@ body{
     }
 }
 .wrapper{
-
+    padding: 0 20px;
 }
 h1{
-
+    @include fontBold( $desk-h1-font-size );
 }
 h2{
-
+    @include fontBold( $mob-h2-font-size );
 }
 .no-display{
     display: none;

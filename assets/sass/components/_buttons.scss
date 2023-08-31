@@ -1,0 +1,7 @@
+.buyButton{
+    width:100%;
+    padding: 17px 0 20px 0;
+    @include fontBold( $mob-button-font-size );
+    background-color: $second-main-color;
+    border-radius: 10px;
+}

@@ -1,0 +1,12 @@
+.burger{
+    height: 14px;
+    width: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__rectangle{
+        height: 2px;
+        background-color: #fff;
+    }
+}

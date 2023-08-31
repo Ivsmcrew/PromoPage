@@ -131,4 +131,30 @@ h2 {
 
 .no-display {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.burger {
+  height: 14px;
+  width: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger__rectangle {
+  height: 2px;
+  background-color: #fff;
+}
+
+.buyButton {
+  width: 100%;
+  padding: 17px 0 20px 0;
+  font: 700 normal 1.6rem "Ubuntu", sans-serif;
+  background-color: #FFCF2D;
+  border-radius: 10px;
+}
+
+header {
+  background-color: #9564AA;
+}
+
+/*# sourceMappingURL=style.css.map */

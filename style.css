@@ -93,11 +93,14 @@ legend {
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font: 400 normal 10px "Ubuntu", sans-serif;
 }
 
 body {
+  position: relative;
+  height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font: 400 normal 1.4rem "Ubuntu", sans-serif;
@@ -107,14 +110,19 @@ body {
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 0;
+  left: 100%;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 .backLayer_active {
-  display: block;
+  left: 0;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
 .wrapper {
@@ -139,10 +147,35 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 3;
 }
 .burger__rectangle {
   height: 2px;
   background-color: #fff;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.burger_active {
+  position: relative;
+}
+.burger_active .burger__rectangle {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 23px;
+  background-color: #9564AA;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.burger_active .burger__rectangle:nth-child(1) {
+  transform: rotate(45deg);
+}
+.burger_active .burger__rectangle:nth-child(2) {
+  opacity: 0;
+}
+.burger_active .burger__rectangle:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .buyButton {
@@ -151,6 +184,14 @@ h2 {
   font: 700 normal 1.6rem "Ubuntu", sans-serif;
   background-color: #FFCF2D;
   border-radius: 10px;
+}
+
+.premiumButton {
+  font: 400 normal 1rem "Ubuntu", sans-serif;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #684677;
+  border-radius: 5px;
 }
 
 .header {
@@ -168,6 +209,76 @@ h2 {
 .header__premiumButton {
   margin-left: auto;
   margin-right: 7px;
+  background-color: #9564AA;
+}
+
+.main__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+.main__nav_hidden {
+  right: -100%;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+
+.nav {
+  width: 270px;
+  height: 100vh;
+  padding: 18px;
+  background-color: rgba(149, 100, 170, 0.1);
+  border: 1px solid rgba(149, 100, 170, 0.2);
+  border-radius: 5px;
+}
+.nav__separator {
+  margin-top: 22px;
+}
+.nav__hub {
+  margin-top: 22px;
+  margin-left: 12px;
+}
+
+.user {
+  display: grid;
+  grid-template-areas: "avatar userName" "avatar premiumButton";
+  justify-content: start;
+  align-items: center;
+  column-gap: 15px;
+}
+.user .avatarImage {
+  grid-area: avatar;
+  width: 49px;
+  height: 49px;
+}
+.user .userName {
+  font: 700 normal 1.6rem "Ubuntu", sans-serif;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(149, 100, 170, 0.1);
+}
+
+.hub {
+  display: grid;
+  row-gap: 25px;
+}
+.hub .department__link {
+  display: flex;
+  align-items: center;
+}
+.hub .department__icon {
+  width: 22px;
+  height: 22px;
+}
+.hub .department__text {
+  margin-left: 30px;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

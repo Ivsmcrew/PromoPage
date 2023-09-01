@@ -5,3 +5,11 @@
     background-color: $second-main-color;
     border-radius: 10px;
 }
+
+.premiumButton{
+    @include fontRegular(1rem);
+    padding: 5px 10px;
+    color: #fff;
+    background-color: $dark-main-color;
+    border-radius: 5px;
+}

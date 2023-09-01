@@ -1,0 +1,17 @@
+.main{
+}
+
+.main__nav{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 5;
+    transition-property: right;
+    transition-duration: 0.5s;
+
+    &_hidden{
+        right: -100%;
+        transition-property: right;
+        transition-duration: 0.5s;
+    }
+}

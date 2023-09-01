@@ -1,8 +1,11 @@
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;  
     @include fontRegular( $base-font-size );
 }
 body{
+    position: relative;
+    height: 100vh;
 	overflow-x: hidden;
     scroll-behavior: smooth;  
     @include fontRegular( $mob-main-font-size );
@@ -11,14 +14,19 @@ body{
     position: absolute;
     z-index: 2;
     top:0;
-    left:0;
+    left:100%;
     height: 100%;
     width: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.7);
-    display: none;
+    background-color: rgba(255, 255, 255);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
 
     &_active{
-        display: block;
+        left:0;
+        opacity: 1;
+        transition-property: all;
+        transition-duration: 0.3s;
     }
 }
 .wrapper{

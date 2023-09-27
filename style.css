@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -106,6 +107,10 @@ body {
   font: 400 normal 1.4rem "Ubuntu", sans-serif;
 }
 
+.main {
+  margin-bottom: 30px;
+}
+
 .backLayer {
   position: absolute;
   z-index: 2;
@@ -194,6 +199,108 @@ h2 {
   border-radius: 5px;
 }
 
+.credits {
+  padding: 0 20px;
+}
+
+.credits__h2 {
+  margin-top: 15px;
+}
+
+.credits__separator {
+  margin-top: 10px;
+}
+
+.credits__sliderContainer {
+  margin-top: 23px;
+}
+
+.credits__buyButton {
+  margin-top: 34px;
+}
+
+.credits__agreement {
+  margin-top: 15px;
+}
+
+.credits__additional {
+  margin-top: 32px;
+}
+
+.agreement .checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.agreement .checkbox:checked + .customCheckbox::before {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+.agreement .customCheckbox {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #9564AA;
+  color: #fff;
+}
+.agreement .customCheckbox::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 7px auto;
+  background-image: url("../../../assets/icons/checkbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+.agreement .label {
+  display: flex;
+  font: 400 normal 1rem "Ubuntu", sans-serif;
+  line-height: 16px;
+}
+.agreement .label .text {
+  margin-left: 10px;
+}
+.agreement__span {
+  color: #9564AA;
+}
+
+.additional__rubin {
+  display: block;
+  margin: 0 auto;
+  width: 81px;
+  height: 67px;
+}
+
+.additional__features {
+  margin-top: 13px;
+}
+
+.features {
+  display: grid;
+  row-gap: 10px;
+}
+.features .feat__link {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+.features .feat__icon {
+  margin-left: 7px;
+}
+.features .feat__text {
+  margin-left: 16px;
+  font: 700 normal 1.2rem "Ubuntu", sans-serif;
+}
+
 .header {
   padding: 0 20px;
   height: 50px;
@@ -208,7 +315,7 @@ h2 {
 
 .header__premiumButton {
   margin-left: auto;
-  margin-right: 7px;
+  margin-right: -5px;
   background-color: #9564AA;
 }
 
@@ -230,7 +337,7 @@ h2 {
   width: 270px;
   height: 100vh;
   padding: 18px;
-  background-color: rgba(149, 100, 170, 0.1);
+  background-color: rgba(149, 100, 170, 0.2);
   border: 1px solid rgba(149, 100, 170, 0.2);
   border-radius: 5px;
 }
@@ -261,7 +368,7 @@ h2 {
 .separator {
   width: 100%;
   height: 2px;
-  background-color: rgba(149, 100, 170, 0.1);
+  background-color: rgba(149, 100, 170, 0.2);
 }
 
 .hub {
@@ -281,4 +388,91 @@ h2 {
   color: #000;
 }
 
-/*# sourceMappingURL=style.css.map */
+.slider__card {
+  display: flex;
+  align-items: center;
+  padding: 18px 33px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #9564AA;
+}
+.slider__phrase {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-left: -53px;
+  border-radius: 5px;
+  background-color: #FFCF2D;
+  font: 700 normal 1.4rem "Ubuntu", sans-serif;
+}
+.slider__bill {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font: 700 normal 2.4rem "Ubuntu", sans-serif;
+  color: #fff;
+}
+.slider__bill p:nth-child(3) {
+  font: 400 normal 2.4rem "Ubuntu", sans-serif;
+  margin-left: 2px;
+}
+.slider__bill p:nth-child(4) {
+  margin-left: 2px;
+}
+.slider__cr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  font: 700 normal 0.8rem "Ubuntu", sans-serif;
+  color: #000;
+  background-color: #FFCF2D;
+}
+
+/* slider */
+/* slider is started */
+/* slider with dots */
+/* bounding shell */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Track of slides. Our main container */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Active card(visible now) */
+/* Current card */
+/* Слайд по центру */
+/* Cloned slider */
+/* Arrow */
+/* Left arrow */
+/* Right arrow */
+/* Inactive arrow */
+/* Dots */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #FFCF2D;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ee734e;
+}/*# sourceMappingURL=style.css.map */

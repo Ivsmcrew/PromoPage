@@ -81,18 +81,76 @@
         </nav>
 
         <section class="credits main__credits">
-            <h2>Закончились кредиты?</h2>
+            <h2 class="credits__h2">Закончились кредиты?</h2>
             
             <div class="separator credits__separator"></div>
 
-            <div class="sliderContainer credits__sliderContainer"></div>
+            <div class="sliderContainer credits__sliderContainer">
+                <div class="slider">
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>50</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>150</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>300</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>500</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>1000</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__phrase">One time offer!</div>
+                        <div class="slider__bill">
+                            <p>1000</p>
+                            <p class="slider__cr">CR</p>
+                            <p>/</p>
+                            <p>$5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <button class="buyButton credits__buyButton">Try now</button>
 
-            <div class="agreement credits__agreement">
-                <input type="checkbox" id="agree" checked>
-                <label for="agree">
-                    By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span>
+            <div class="agreement credits__agreement">  
+                <label class="label" for="agree">
+                    <input class="checkbox" type="checkbox" id="agree" checked>
+                    <span class="customCheckbox"></span>
+                    <span class="text">By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span></span>
                 </label>
             </div>
 
@@ -129,6 +187,8 @@
         </section>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/slick/slick.min.js"></script>
     <script src="script.js" type="module"></script>
 </body>
 </html>

@@ -10,6 +10,9 @@ body{
     scroll-behavior: smooth;  
     @include fontRegular( $mob-main-font-size );
 }
+.main{
+    margin-bottom: 30px;
+}
 .backLayer{
     position: absolute;
     z-index: 2;

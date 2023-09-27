@@ -1,0 +1,44 @@
+.slider{
+    &__card{
+        display: flex;
+        align-items: center;
+        padding: 18px 33px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background-color: $first-main-color;
+    }
+    &__phrase{
+        display: inline-block;
+        padding: 3px 10px;
+        margin-left: -53px;
+        border-radius: 5px;
+        background-color: $second-main-color;
+        @include fontBold(1.4rem);
+    }
+    &__bill{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        @include fontBold(2.4rem);
+        color: #fff;
+        p:nth-child(3) {
+            @include fontRegular(2.4rem);
+            margin-left: 2px;
+        }
+        p:nth-child(4) {
+            margin-left: 2px;
+        }
+    }
+    &__cr{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-left: 5px;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%; 
+        @include fontBold(0.8rem);
+        color: #000;
+        background-color: $second-main-color;
+    }   
+}

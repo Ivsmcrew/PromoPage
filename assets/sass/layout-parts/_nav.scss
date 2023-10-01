@@ -26,6 +26,7 @@
         grid-area: avatar;
         width: 49px;
         height: 49px;
+        border-radius: 50%;
     }
     .userName{
         @include fontBold();

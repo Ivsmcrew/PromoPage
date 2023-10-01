@@ -360,6 +360,7 @@ h2 {
   grid-area: avatar;
   width: 49px;
   height: 49px;
+  border-radius: 50%;
 }
 .user .userName {
   font: 700 normal 1.6rem "Ubuntu", sans-serif;

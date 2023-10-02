@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="./assets/icons/favicon.ico" rel="icon">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core.css">
+    <link media="screen and (max-width:1010px)" rel="stylesheet" type="text/css" href="mobile-tablet.css">
+    <link media="screen and (min-width:1020px)" rel="stylesheet" type="text/css" href="desktop.css">
     <title>Promo page</title>
 </head>
 <body>
@@ -27,8 +29,12 @@
     <main class="main">
         <nav class="nav main__nav main__nav_hidden">
             <div class="user nav__user">
-                <img class="avatarImage" src="./assets/images/avatar-photo-mini.jpg" alt="avatar image">
-                <p class="userName">Test2412</p>
+                <picture>
+                    <source media="(max-width: 1920px)" srcset="./assets/images/avatar-photo-mini.jpg">
+                    <source media="(min-width: 1921px)" srcset="./assets/images/avatar-photo-orig.jpg">
+                    <img class="avatarImage" src="./assets/images/avatar-photo-mini.jpg" alt="avatar image">
+                </picture>
+                <p class="userName">Alex Pushkin</p>
                 <button class="premiumButton user__premiumButton">GET PREMIUM</button>
             </div>
 
@@ -81,7 +87,7 @@
         </nav>
 
         <section class="credits main__credits">
-            <h2 class="credits__h2">Закончились кредиты?</h2>
+            <h2 class="credits__h2">SPECIAL OFFER!</h2>
             
             <div class="separator credits__separator"></div>
 
@@ -161,25 +167,25 @@
                     <li class="feat">
                         <a class="feat__link" href="#">
                             <img class="feat__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
-                            <p class="feat__text">Отправлять сообщения</p>
+                            <p class="feat__text">Send message</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
                             <img class="feat__icon" src="./assets/icons/eye-icon.svg" alt="Hidden photos button">
-                            <p class="feat__text">Просматривать скрытые фото</p>
+                            <p class="feat__text">View hidden photos</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
                             <img class="feat__icon" src="./assets/icons/gift-icon.svg" alt="Gift button">
-                            <p class="feat__text">Оплачивать подарки</p>
+                            <p class="feat__text">Pay for gifts</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
                             <img class="feat__icon" src="./assets/icons/heart-icon.svg" alt="Premium functions button">
-                            <p class="feat__text">Пользоваться другими премиум функциями</p>
+                            <p class="feat__text">Others premium features</p>
                         </a>    
                     </li>
                 </ul>

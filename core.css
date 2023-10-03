@@ -99,12 +99,15 @@ html {
   font: 400 normal 10px "Ubuntu", sans-serif;
 }
 
-body {
+.body {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font: 400 normal 1.4rem "Ubuntu", sans-serif;
+}
+.body_inactive {
+  overflow-y: hidden;
 }
 
 .main {

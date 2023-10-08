@@ -1,5 +1,7 @@
 import sliderHandler from "./assets/js/slider.js";
 import mobileMenuHandler from "./assets/js/mobileMenu.js";
+import rotateFeatures from "./assets/js/featuresCircle.js";
+import parallaxHandler from "./assets/js/parallax.js";
 
 $(document).ready(function(){
     //slider
@@ -7,4 +9,10 @@ $(document).ready(function(){
 
     //mobile-menu
     mobileMenuHandler();
+
+    //circle of features
+    rotateFeatures();
+
+    //parallax
+    parallaxHandler();
 });

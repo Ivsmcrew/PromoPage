@@ -8,12 +8,21 @@
             align-items: center;
             min-height: 30px;
         }
-        &__icon{
-            margin-left: 7px;
+        &__link_desktop{
+            display: none;
         }
         &__text{
             margin-left: 16px;
             @include fontBold($fz: 1.2rem)
+        }
+        &__circleWrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $first-background-color;
         }
     }
 }

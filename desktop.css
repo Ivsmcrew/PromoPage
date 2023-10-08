@@ -1,1 +1,267 @@
-/*# sourceMappingURL=desktop.css.map */
+/**************
+Desktop DOM-objects
+***************/
+.offer {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  font: 700 normal 1.6rem "Ubuntu", sans-serif;
+  color: #fff;
+  background-color: #C15CA1;
+  border-radius: 10px;
+}
+.offer .discount {
+  font-size: 4rem;
+  color: #FFCF2D;
+}
+.offer .text {
+  margin-left: auto;
+}
+.offer .timer {
+  margin-left: 38px;
+  width: 198px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 16px;
+}
+.goods__item {
+  flex: 1 0 150px;
+  position: relative;
+  height: 123px;
+  border: 2px solid #9564AA;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(149, 100, 170, 0.1);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.goods__item:hover {
+  background-color: #9564AA;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.goods__item:hover .goods__phrase {
+  display: flex;
+}
+.goods__item:hover .goods__bill {
+  color: #fff;
+}
+.goods__item:hover .buyButton {
+  background-color: #FFCF2D;
+  color: rgb(0, 0, 0);
+}
+.goods__phrase {
+  display: none;
+  width: 130px;
+  padding: 3px 10px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #FFCF2D;
+  border-radius: 5px;
+  font: 700 normal 1.4rem "Ubuntu", sans-serif;
+}
+.goods__bill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  font: 700 normal 2.4rem "Ubuntu", sans-serif;
+}
+.goods__bill p:nth-child(3) {
+  font: 400 normal 2.4rem "Ubuntu", sans-serif;
+  margin-left: 2px;
+}
+.goods__bill p:nth-child(4) {
+  margin-left: 2px;
+}
+.goods__cr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  font: 700 normal 0.8rem "Ubuntu", sans-serif;
+  color: #000;
+  background-color: #FFCF2D;
+}
+.goods .buyButton {
+  margin-top: 11px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+  padding: 0 19.5vw;
+  height: 100px;
+}
+.header__logo {
+  display: block;
+  color: #fff;
+}
+.header__premiumButton {
+  display: none;
+}
+
+.headerNav {
+  display: block;
+  margin-left: auto;
+}
+.headerNav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.headerNav__department {
+  margin-left: 0;
+}
+.headerNav__link {
+  display: flex;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.headerNav__link:hover {
+  background-color: #684677;
+  color: #FFCF2D;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.headerNav__link .rubinIcon {
+  margin-left: 10px;
+}
+
+.main {
+  padding: 0 20px;
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+  flex: 1;
+}
+.main__credits {
+  margin-left: 30px;
+}
+
+.nav {
+  position: static;
+  height: auto;
+}
+
+.agreement .label {
+  font: 400 normal 1.3rem "Ubuntu", sans-serif;
+}
+
+.credits {
+  flex: 0 1 870px;
+  padding: 0;
+}
+.credits__h2 {
+  margin-top: 0px;
+}
+.credits__separator {
+  margin-top: 20px;
+}
+.credits__offer {
+  margin-top: 30px;
+}
+.credits__goods {
+  margin-top: 26px;
+}
+.credits__agreement {
+  margin-top: 12px;
+}
+.credits__buyButton {
+  display: none;
+}
+
+.additional {
+  position: relative;
+  margin-top: 100px;
+}
+.additional__rubin {
+  width: 129px;
+  height: 107px;
+}
+.additional__features {
+  margin-top: 0;
+}
+.additional__features .feat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 280px;
+  height: 280px;
+}
+.additional__features .feat__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.additional__features .feat__circleWrap {
+  width: 50px;
+  height: 50px;
+}
+.additional__features .feat__icon {
+  margin-left: 0px;
+  width: 24px;
+  height: 24px;
+}
+.additional__features .feat__text {
+  color: #9564AA;
+  margin-left: 0px;
+}
+
+.leftParallaxScene {
+  position: absolute;
+  z-index: -1;
+  top: 200px;
+  left: 80px;
+}
+.leftParallaxScene .leftBubbles {
+  opacity: 0.8;
+}
+
+.rightParallaxScene {
+  position: absolute;
+  z-index: -1;
+  top: 120px;
+  right: 50px;
+}
+.rightParallaxScene .rightBubbles {
+  opacity: 0.8;
+}
+
+/**************
+Mobile DOM-objects
+***************/
+.backLayer {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.sliderContainer {
+  display: none;
+}/*# sourceMappingURL=desktop.css.map */

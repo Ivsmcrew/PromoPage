@@ -12,12 +12,15 @@
     .features{
         .feat{
             &__icon{
-                margin-left: 7px;
                 height: 20px;
                 width: 20px;
             }
             &__text{
                 @include fontBold($fz: 1.3rem)
+            }
+            &__circleWrap{
+                width: 35px;
+                height: 35px;
             }
         }
     }

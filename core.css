@@ -138,7 +138,7 @@ html {
 }
 
 h1 {
-  font: 700 normal 4.8rem "Ubuntu", sans-serif;
+  font: 700 normal 4.5rem "Ubuntu", sans-serif;
 }
 
 h2 {
@@ -146,6 +146,14 @@ h2 {
 }
 
 .no-display {
+  display: none;
+}
+
+.leftBubbles {
+  display: none;
+}
+
+.rightBubbles {
   display: none;
 }
 
@@ -230,6 +238,14 @@ h2 {
   margin-top: 32px;
 }
 
+.credits__offer {
+  display: none;
+}
+
+.credits__goods {
+  display: none;
+}
+
 .agreement .checkbox {
   width: 0;
   height: 0;
@@ -266,6 +282,7 @@ h2 {
 }
 .agreement .label {
   display: flex;
+  align-items: center;
   font: 400 normal 1rem "Ubuntu", sans-serif;
   line-height: 16px;
 }
@@ -296,12 +313,21 @@ h2 {
   align-items: center;
   min-height: 30px;
 }
-.features .feat__icon {
-  margin-left: 7px;
+.features .feat__link_desktop {
+  display: none;
 }
 .features .feat__text {
   margin-left: 16px;
   font: 700 normal 1.2rem "Ubuntu", sans-serif;
+}
+.features .feat__circleWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(149, 100, 170, 0.1);
 }
 
 .header {
@@ -329,6 +355,14 @@ h2 {
   background-color: #9564AA;
 }
 
+.header__logo {
+  display: none;
+}
+
+.header__headerNav {
+  display: none;
+}
+
 .main__nav {
   position: absolute;
   top: 0;
@@ -347,7 +381,7 @@ h2 {
   width: 270px;
   height: 100vh;
   padding: 18px;
-  background-color: rgba(149, 100, 170, 0.2);
+  background-color: rgba(149, 100, 170, 0.1);
   border: 1px solid rgba(149, 100, 170, 0.2);
   border-radius: 5px;
 }
@@ -370,16 +404,18 @@ h2 {
   grid-area: avatar;
   width: 49px;
   height: 49px;
-  border-radius: 50%;
 }
 .user .userName {
   font: 700 normal 1.6rem "Ubuntu", sans-serif;
+}
+.user .image {
+  border-radius: 50%;
 }
 
 .separator {
   width: 100%;
   height: 2px;
-  background-color: rgba(149, 100, 170, 0.2);
+  background-color: rgba(170, 100, 100, 0.2);
 }
 
 .hub {

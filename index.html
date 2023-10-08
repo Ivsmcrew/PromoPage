@@ -16,7 +16,7 @@
     <div class="backLayer"></div>
 
     <header class="header">
-        <!-- <h1 class="header__logo">Logo</h1> -->
+        <h1 class="header__logo">HELLYEAH</h1>
         <div class="burger header__burgerIcon">
             <div class="burger__rectangle"></div>
             <div class="burger__rectangle"></div>
@@ -25,7 +25,7 @@
         <button class="premiumButton header__premiumButton">
             <img class="rubinIcon" src="./assets/icons/rubin-icon.svg" alt="premium button">
         </button>
-        <!-- <nav class="headerNav">
+        <nav class="headerNav header__headerNav">
             <ul class="headerNav__list">
                 <li class="headerNav__department">
                     <a class="headerNav__link" href="#">People nearby</a>
@@ -40,16 +40,16 @@
                     </a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
 
     <main class="main">
         <nav class="nav main__nav main__nav_hidden">
             <div class="user nav__user">
-                <picture>
+                <picture class="avatarImage">
                     <source media="(max-width: 1920px)" srcset="./assets/images/avatar-photo-mini.jpg">
                     <source media="(min-width: 1921px)" srcset="./assets/images/avatar-photo-orig.jpg">
-                    <img class="avatarImage" src="./assets/images/avatar-photo-mini.jpg" alt="avatar image">
+                    <img class="image" src="./assets/images/avatar-photo-mini.jpg" alt="avatar image">
                 </picture>
                 <p class="userName">Alex Pushkin</p>
                 <button class="premiumButton user__premiumButton">GET PREMIUM</button>
@@ -169,20 +169,20 @@
 
             <button class="buyButton credits__buyButton">Try now</button>
 
-            <!-- <article class="offer">
+            <article class="offer credits__offer">
                 <h3 class="discount">Discount 40%</h3>
                 <p class="text">Offer is valid for:</p>
                 <div class="timer"></div>
-            </article> -->
+            </article>
 
-            <!-- <article class="goods">
+            <article class="goods credits__goods">
                 <div class="goods__item">
                     <div class="goods__phrase">One time offer!</div>
                     <div class="goods__bill">
                         <p>50</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
 
                 <div class="goods__item">
@@ -191,7 +191,7 @@
                         <p>150</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
                 
                 <div class="goods__item">
@@ -200,7 +200,7 @@
                         <p>300</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
                 
                 <div class="goods__item">
@@ -209,7 +209,7 @@
                         <p>500</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
                 
                 <div class="goods__item">
@@ -218,7 +218,7 @@
                         <p>1000</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
                 
                 <div class="goods__item">
@@ -227,44 +227,74 @@
                         <p>1000</p>
                         <p class="goods__cr">CR</p>
                     </div>
-                    <button class="buy">Buy now</button>
+                    <button class="buyButton">Buy now</button>
                 </div>
-            </article> -->
+            </article>
 
             <div class="agreement credits__agreement">  
                 <label class="label" for="agree">
                     <input class="checkbox" type="checkbox" id="agree" checked>
                     <span class="customCheckbox"></span>
-                    <span class="text">By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span></span>
+                    <span class="text">
+                        By clicking Checkbox you agree and accept our <span class="agreement__span">Privacy Policy</span>, and <span class="agreement__span">Terms of use</span>
+                    </span>
                 </label>
             </div>
 
             <div class="additional credits__additional">
-                <img class="rubin additional__rubin" src="./assets/images/rubin-object.svg" alt="rubin image">
+                <img class="rubin additional__rubin" 
+                     src="./assets/images/rubin-object.svg" 
+                     alt="rubin image">
 
                 <ul class="features additional__features">
                     <li class="feat">
                         <a class="feat__link" href="#">
-                            <img class="feat__icon" src="./assets/icons/comment-icon.svg" alt="Messages button">
+                            <div class="feat__circleWrap">
+                                <img class="feat__icon" 
+                                     src="./assets/icons/comment-icon.svg" 
+                                     alt="Messages button">
+                            </div>
                             <p class="feat__text">Send message</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
-                            <img class="feat__icon" src="./assets/icons/eye-icon.svg" alt="Hidden photos button">
-                            <p class="feat__text">View hidden photos</p>
+                            <div class="feat__circleWrap">
+                                <img class="feat__icon" 
+                                     src="./assets/icons/eye-icon.svg" 
+                                     alt="Hidden photos button">
+                            </div>
+                            <p class="feat__text">Hidden</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
-                            <img class="feat__icon" src="./assets/icons/gift-icon.svg" alt="Gift button">
+                            <div class="feat__circleWrap">
+                                <img class="feat__icon" 
+                                     src="./assets/icons/gift-icon.svg" 
+                                     alt="Gift button">
+                            </div>
                             <p class="feat__text">Pay for gifts</p>
                         </a>    
                     </li>
                     <li class="feat">
                         <a class="feat__link" href="#">
-                            <img class="feat__icon" src="./assets/icons/heart-icon.svg" alt="Premium functions button">
-                            <p class="feat__text">Others premium features</p>
+                            <div class="feat__circleWrap">
+                                <img class="feat__icon" 
+                                     src="./assets/icons/heart-icon.svg" 
+                                     alt="Premium functions button">
+                            </div>
+                            <p class="feat__text">Premium</p>
+                        </a>    
+                    </li>
+                    <li class="feat">
+                        <a class="feat__link feat__link_desktop" href="#">
+                            <div class="feat__circleWrap">
+                                <img class="feat__icon" 
+                                     src="./assets/icons/gear-icon.svg" 
+                                     alt="Main configs">
+                            </div>
+                            <p class="feat__text">Configs</p>
                         </a>    
                     </li>
                 </ul>
@@ -272,8 +302,16 @@
         </section>
     </main>
 
+    <div class="leftParallaxScene">
+        <img data-depth="0.5" class="leftBubbles" src="./assets/images/left-bubble-image.png" loading="lazy" alt="left bubble">
+    </div>
+    <div class="rightParallaxScene">
+        <img data-depth="0.5" class="rightBubbles" src="./assets/images/right-bubble-image.png" loading="lazy" alt="right bubble">
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="script.js" type="module"></script>
 </body>
 </html>

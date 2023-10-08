@@ -1,0 +1,79 @@
+.goods{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 16px;
+
+    &__item{
+        flex: 1 0 150px;
+        position: relative;
+        height: 123px;
+        border: 2px solid $first-main-color;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: $first-background-color;
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        &:hover{
+            background-color: $first-main-color;
+            transition-property: all;
+            transition-duration: 0.2s;
+
+            .goods__phrase{
+                display: flex;
+            }
+            .goods__bill{
+                color: #fff;
+            }
+            .buyButton{
+                background-color: $second-main-color;
+                color: rgba(0, 0, 0);
+            }
+        } 
+    }
+    &__phrase{
+        display: none;
+        width: 130px;
+        padding: 3px 10px;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: $second-main-color;
+        border-radius: 5px;
+        @include fontBold($fz: 1.4rem);
+    }
+    &__bill{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        @include fontBold(2.4rem);
+        p:nth-child(3) {
+            @include fontRegular(2.4rem);
+            margin-left: 2px;
+        }
+        p:nth-child(4) {
+            margin-left: 2px;
+        }
+    }
+    &__cr{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-left: 5px;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%; 
+        @include fontBold(0.8rem);
+        color: #000;
+        background-color: $second-main-color;
+    } 
+    .buyButton{
+        margin-top: 11px;
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.2);
+    }
+}

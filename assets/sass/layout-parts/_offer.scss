@@ -1,0 +1,24 @@
+.offer{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    @include fontBold();
+    color: #fff;
+    background-color: $offer-color;
+    border-radius: 10px;
+
+    .discount{
+        font-size: 4rem;
+        color: $second-main-color;
+    }
+    .text{
+        margin-left: auto;
+    }
+    .timer{
+        margin-left: 38px;
+        width: 198px;
+        height: 46px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}

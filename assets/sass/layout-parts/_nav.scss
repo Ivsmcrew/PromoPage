@@ -26,16 +26,18 @@
         grid-area: avatar;
         width: 49px;
         height: 49px;
-        border-radius: 50%;
     }
     .userName{
         @include fontBold();
+    }
+    .image{
+        border-radius: 50%;
     }
 }
 .separator{
     width:100%;
     height: 2px;
-    background-color: $first-background-color;
+    background-color: $second-background-color;
 }
 .hub{
     display: grid;

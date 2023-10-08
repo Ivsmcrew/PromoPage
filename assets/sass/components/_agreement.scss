@@ -39,6 +39,7 @@
     }
     .label{
         display: flex;
+        align-items: center;
         @include fontRegular(1rem);
         line-height: 16px;
 

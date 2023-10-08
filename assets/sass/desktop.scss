@@ -33,8 +33,8 @@ Desktop DOM-objects
         column-gap: 40px;
     }
     &__department{
-        // margin-left: 40px;
         margin-left: 0;
+
     }
     &__link{
         display: flex;
@@ -70,6 +70,22 @@ Desktop DOM-objects
 .nav{
     position: static;
     height: auto;
+}
+.feat__link:hover{
+    .feat__text{
+        color: $second-main-color;
+    }
+    .iconColor{
+        fill: $second-main-color;
+    }
+}
+.department__link:hover{
+    .department__text{
+        color: $second-main-color;
+    }
+    .iconColor{
+        fill: $second-main-color;
+    }
 }
 .agreement{
     .label{
@@ -115,7 +131,7 @@ Desktop DOM-objects
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            width: 280px;
+            width: 80px;
             height: 280px;
 
             &__link{
@@ -135,6 +151,7 @@ Desktop DOM-objects
             &__text{
                 color: $first-main-color;
                 margin-left: 0px;
+                text-align: center;
             }
         }
     }

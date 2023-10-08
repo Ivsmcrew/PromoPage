@@ -166,6 +166,20 @@ Desktop DOM-objects
   height: auto;
 }
 
+.feat__link:hover .feat__text {
+  color: #FFCF2D;
+}
+.feat__link:hover .iconColor {
+  fill: #FFCF2D;
+}
+
+.department__link:hover .department__text {
+  color: #FFCF2D;
+}
+.department__link:hover .iconColor {
+  fill: #FFCF2D;
+}
+
 .agreement .label {
   font: 400 normal 1.3rem "Ubuntu", sans-serif;
 }
@@ -209,7 +223,7 @@ Desktop DOM-objects
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 280px;
+  width: 80px;
   height: 280px;
 }
 .additional__features .feat__link {
@@ -229,6 +243,7 @@ Desktop DOM-objects
 .additional__features .feat__text {
   color: #9564AA;
   margin-left: 0px;
+  text-align: center;
 }
 
 .leftParallaxScene {

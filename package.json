@@ -4,8 +4,9 @@
   "description": "Testing description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-run": "sass --watch assets/sass/style.scss style.css" 
+    "sass-core": "sass --watch assets/sass/core.scss core.css",
+    "sass-desktop": "sass --watch assets/sass/desktop.scss desktop.css",
+    "sass-mobile": "sass --watch assets/sass/mobile-tablet.scss mobile-tablet.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
     "url": "https://github.com/Ivsmcrew/PromoPage/issues"
   },
   "homepage": "https://github.com/Ivsmcrew/PromoPage#readme",
-  "dependencies": {
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "sass": "^1.66.1"
   }
 }

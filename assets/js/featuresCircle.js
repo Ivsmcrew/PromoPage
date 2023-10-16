@@ -8,7 +8,7 @@ export default function rotateFeatures() {
     const quantityOfFeats = featsArray.length;
     const stepOfRotate = 360 / quantityOfFeats;
 
-    featsArray.map((item, index) => {
+    featsArray.forEach((item, index) => {
       const rotationAngle = index * stepOfRotate;
       $(item).css('transform', `translateX(-50%) translateY(-50%) rotate(${rotationAngle}deg)`);
       $(item).children('.feat__link').css('transform', `rotate(-${rotationAngle}deg)`);
@@ -18,8 +18,8 @@ export default function rotateFeatures() {
   // watch resize and reload
   $(window).on('resize', () => {
     width = $(window).width();
-    if (width < 1011 && isDesktop || width > 1010 && !isDesktop) {
-      location.reload();
+    if ((width < 1011 && isDesktop) || (width > 1010 && !isDesktop)) {
+      window.location.reload();
     }
   });
 }

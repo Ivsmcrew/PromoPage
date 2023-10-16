@@ -4,17 +4,17 @@ export default function timerHandler() {
   let seconds = 0;
   let restInMilliseconds = 1000 * (seconds + minutes * 60 + hours * 60 * 60);
 
-  function createTimer() {
-    insertTimeUnit('.timer__el_hours', hours);
-    insertTimeUnit('.timer__el_minutes', minutes);
-    insertTimeUnit('.timer__el_seconds', seconds);
-  }
   function insertTimeUnit(selector, timeUnit) {
     if (timeUnit < 10) {
       document.querySelector(selector).innerHTML = `0${timeUnit}`;
     } else {
       document.querySelector(selector).innerHTML = `${timeUnit}`;
     }
+  }
+  function createTimer() {
+    insertTimeUnit('.timer__el_hours', hours);
+    insertTimeUnit('.timer__el_minutes', minutes);
+    insertTimeUnit('.timer__el_seconds', seconds);
   }
   function refreshTimer() {
     restInMilliseconds -= 1000;

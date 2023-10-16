@@ -1,22 +1,22 @@
-import sliderHandler from "./assets/js/slider.js";
-import mobileMenuHandler from "./assets/js/mobileMenu.js";
-import rotateFeatures from "./assets/js/featuresCircle.js";
-import parallaxHandler from "./assets/js/parallax.js";
-import timerHandler from "./assets/js/timer.js";
+import sliderHandler from './assets/js/slider.js';
+import mobileMenuHandler from './assets/js/mobileMenu.js';
+import rotateFeatures from './assets/js/featuresCircle.js';
+import parallaxHandler from './assets/js/parallax.js';
+import timerHandler from './assets/js/timer.js';
 
-$(document).ready(function(){
-    //slider
-    sliderHandler();
+$(document).ready(() => {
+  // slider
+  sliderHandler();
 
-    //mobile-menu
-    mobileMenuHandler();
+  // mobile-menu
+  mobileMenuHandler();
 
-    //circle of features
-    rotateFeatures();
+  // circle of features
+  rotateFeatures();
 
-    //parallax
-    parallaxHandler();
+  // parallax
+  parallaxHandler();
 
-    //timer
-    timerHandler();
+  // timer
+  timerHandler();
 });

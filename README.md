@@ -12,6 +12,9 @@ This project  gave me experience at the following points:
 	
 <sub> *Screenshots of the landing:* </sub>
 ![Screenshot of the page](./assets/images/promo-desktop.PNG)
-![Screenshot of the page](./assets/images/promo-mobile.PNG)
+<p align="center">
+  <img src="./assets/images/promo-mobile.PNG">
+</p>
+
 
 

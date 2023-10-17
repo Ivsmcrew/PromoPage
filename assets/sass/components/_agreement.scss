@@ -1,0 +1,53 @@
+.agreement{
+    .checkbox{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+
+        &:checked + .customCheckbox::before{
+            opacity: 1;
+
+            transition-property: opacity;
+            transition-duration: 0.2s;
+        }
+    }
+    .customCheckbox{
+        display: block;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: $first-main-color;
+        color: #fff;
+
+        &::before{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: 7px auto;
+            background-image: url("../../../assets/icons/checkbox.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0;
+
+            transition-property: opacity;
+            transition-duration: 0.2s;
+        }
+    }
+    .label{
+        display: flex;
+        align-items: center;
+        @include fontRegular(1rem);
+        line-height: 16px;
+
+        .text{
+            margin-left: 10px;
+        }
+    }
+    &__span{
+        color: $first-main-color;
+    }
+}

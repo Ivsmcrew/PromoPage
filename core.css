@@ -1,0 +1,526 @@
+@charset "UTF-8";
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font: 400 normal 10px "Ubuntu", sans-serif;
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font: 400 normal 1.4rem "Ubuntu", sans-serif;
+}
+.body_inactive {
+  overflow-y: hidden;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+.backLayer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(226, 210, 233);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.backLayer_active {
+  left: 0;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+h1 {
+  font: 700 normal 4.5rem "Ubuntu", sans-serif;
+}
+
+h2 {
+  font: 700 normal 2rem "Ubuntu", sans-serif;
+}
+
+.no-display {
+  display: none;
+}
+
+.leftBubbles {
+  display: none;
+}
+
+.rightBubbles {
+  display: none;
+}
+
+.burger {
+  height: 14px;
+  width: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+}
+.burger__rectangle {
+  height: 2px;
+  background-color: #fff;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.burger_active {
+  position: relative;
+}
+.burger_active .burger__rectangle {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 23px;
+  background-color: #9564AA;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.burger_active .burger__rectangle:nth-child(1) {
+  transform: rotate(45deg);
+}
+.burger_active .burger__rectangle:nth-child(2) {
+  opacity: 0;
+}
+.burger_active .burger__rectangle:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.buyButton {
+  width: 100%;
+  padding: 17px 0 20px 0;
+  font: 700 normal 1.6rem "Ubuntu", sans-serif;
+  background-color: #FFCF2D;
+  border-radius: 10px;
+}
+
+.premiumButton {
+  font: 400 normal 1rem "Ubuntu", sans-serif;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #684677;
+  border-radius: 5px;
+}
+
+.credits {
+  padding: 0 20px;
+}
+
+.credits__h2 {
+  margin-top: 15px;
+}
+
+.credits__separator {
+  margin-top: 10px;
+}
+
+.credits__sliderContainer {
+  margin-top: 23px;
+}
+
+.credits__buyButton {
+  margin-top: 34px;
+}
+
+.credits__agreement {
+  margin-top: 15px;
+}
+
+.credits__additional {
+  margin-top: 32px;
+}
+
+.credits__offer {
+  display: none;
+}
+
+.credits__goods {
+  display: none;
+}
+
+.agreement .checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.agreement .checkbox:checked + .customCheckbox::before {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+.agreement .customCheckbox {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #9564AA;
+  color: #fff;
+}
+.agreement .customCheckbox::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 7px auto;
+  background-image: url("../../../assets/icons/checkbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+.agreement .label {
+  display: flex;
+  align-items: center;
+  font: 400 normal 1rem "Ubuntu", sans-serif;
+  line-height: 16px;
+}
+.agreement .label .text {
+  margin-left: 10px;
+}
+.agreement__span {
+  color: #9564AA;
+}
+
+.additional__rubin {
+  display: block;
+  margin: 0 auto;
+  width: 81px;
+  height: 67px;
+}
+
+.additional__features {
+  margin-top: 13px;
+}
+
+.features {
+  display: grid;
+  row-gap: 10px;
+}
+.features .feat__link {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+.features .feat__link_desktop {
+  display: none;
+}
+.features .feat__text {
+  margin-left: 16px;
+  font: 700 normal 1.2rem "Ubuntu", sans-serif;
+}
+.features .feat__circleWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(149, 100, 170, 0.1);
+}
+
+.header {
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #9564AA;
+}
+
+.header__burgerIcon {
+  margin-left: 7px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.header__burgerIcon_active {
+  transform: rotate(90deg);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.header__premiumButton {
+  margin-left: auto;
+  margin-right: -5px;
+  background-color: #9564AA;
+}
+
+.header__logo {
+  display: none;
+}
+
+.header__headerNav {
+  display: none;
+}
+
+.main__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+.main__nav_hidden {
+  right: -100%;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+
+.nav {
+  width: 270px;
+  height: 100vh;
+  padding: 18px;
+  background-color: rgba(149, 100, 170, 0.1);
+  border: 1px solid rgba(149, 100, 170, 0.2);
+  border-radius: 5px;
+}
+.nav__separator {
+  margin-top: 22px;
+}
+.nav__hub {
+  margin-top: 22px;
+  margin-left: 12px;
+}
+
+.user {
+  display: grid;
+  grid-template-areas: "avatar userName" "avatar premiumButton";
+  justify-content: start;
+  align-items: center;
+  column-gap: 15px;
+}
+.user .avatarImage {
+  grid-area: avatar;
+  width: 49px;
+  height: 49px;
+}
+.user .userName {
+  font: 700 normal 1.6rem "Ubuntu", sans-serif;
+}
+.user .image {
+  border-radius: 50%;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(170, 100, 100, 0.2);
+}
+
+.hub {
+  display: grid;
+  row-gap: 25px;
+}
+.hub .department__link {
+  display: flex;
+  align-items: center;
+}
+.hub .department__icon {
+  width: 22px;
+  height: 22px;
+}
+.hub .department__text {
+  margin-left: 30px;
+  color: #000;
+}
+
+.slider__card {
+  display: flex;
+  align-items: center;
+  padding: 18px 33px;
+  margin-left: 20px;
+  margin-right: 1px;
+  border-radius: 10px;
+  background-color: #9564AA;
+}
+.slider__phrase {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-left: -53px;
+  border-radius: 5px;
+  background-color: #FFCF2D;
+  font: 700 normal 1.4rem "Ubuntu", sans-serif;
+}
+.slider__bill {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font: 700 normal 2.4rem "Ubuntu", sans-serif;
+  color: #fff;
+}
+.slider__bill p:nth-child(3) {
+  font: 400 normal 2.4rem "Ubuntu", sans-serif;
+  margin-left: 2px;
+}
+.slider__bill p:nth-child(4) {
+  margin-left: 2px;
+}
+.slider__cr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  font: 700 normal 0.8rem "Ubuntu", sans-serif;
+  color: #000;
+  background-color: #FFCF2D;
+}
+
+/* slider */
+/* slider is started */
+/* slider with dots */
+/* bounding shell */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Track of slides. Our main container */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Active card(visible now) */
+/* Current card */
+/* Слайд по центру */
+/* Cloned slider */
+/* Arrow */
+/* Left arrow */
+/* Right arrow */
+/* Inactive arrow */
+/* Dots */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #FFCF2D;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ee734e;
+}/*# sourceMappingURL=core.css.map */

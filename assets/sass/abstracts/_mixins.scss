@@ -1,0 +1,11 @@
+//fonts
+@mixin fontRegular($fz: 1.6rem) {
+    font: 400 normal $fz "Ubuntu", sans-serif;
+}
+@mixin fontMedium($fz: 1.6rem) {
+    font: 500 normal $fz "Ubuntu", sans-serif; 
+}
+@mixin fontBold($fz: 1.6rem) {
+    font: 700 normal $fz "Ubuntu", sans-serif; 
+}
+

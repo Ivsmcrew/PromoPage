@@ -1,0 +1,66 @@
+ /* slider */ 
+ .slick-slider{} 
+
+ /* slider is started */ 
+ .slick-slider.slick-initialized{} 
+
+ /* slider with dots */ 
+ .slick-slider.slick-dotted{}	
+
+/* bounding shell */ 
+.slick-list {
+    overflow: hidden;
+} 
+
+/* Track of slides. Our main container */ 
+.slick-track{
+    display: flex;
+}
+
+/* Слайд */ 
+.slick-slide{} 
+
+/* Active card(visible now) */ 
+.slick-slide.slick-active{} 
+
+/* Current card */ 
+.slick-slide.slick-current{} 
+
+/* Слайд по центру */ 
+slick-slide.slick-center{} 
+
+/* Cloned slider */ 
+.slick-slide.slick-cloned{}
+
+/* Arrow */ 
+.slick-arrow{} 
+
+/* Left arrow */ 
+.slick-arrow.slick-prev{} 
+
+/* Right arrow */ 
+.slick-arrow.slick-next{} 
+
+/* Inactive arrow */ 
+.slick-arrow.slick-disabled{}
+
+/* Dots */ 
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+} 
+.slick-dots li{
+    list-style: none;
+} 
+.slick-dots li button{
+    font-size: 0;
+    width: 7px;
+    height: 7px;
+    background-color: $second-main-color;
+    border-radius: 50%;
+} 
+.slick-dots li.slick-active button{
+    background-color: $active-slide;
+} 
